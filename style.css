@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 15px 50px;
+    padding: 4%;
     position: fixed;
     width: 100%;
     top: 0;
@@ -101,4 +101,66 @@ body {
 
 .content span {
     color: orange;
+}
+
+/* Estilo para el botón de contacto con borde cuadrado */
+.bottom-contact {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px; /* Ajusta el tamaño del botón */
+    border-radius: 0; /* Sin bordes redondeados para hacerlo cuadrado */
+    display: inline-block; /* Hace que se comporta como un bloque dentro del contenedor */
+    text-align: center; /* Alineación centrada del texto */
+    transition: background-color 0.3s, transform 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.bottom-contact:hover {
+    background-color: #0f0f0f; /* Color de fondo cuando el mouse pasa sobre el botón */
+    border-color: #080808; /* Cambia el color del borde al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.bottom-contact:active {
+    background-color: #c80000; /* Color de fondo cuando el botón es presionado */
+    border-color: #c80000; /* Color del borde al presionar */
+}
+
+.box-contact {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #080808;
+    transform: scale(1.05);
+    
+}
+
+.contact {
+    text-decoration: none;
+}
+
+/* Estilo para el botón de contacto cuadrado */
+.contacto-btn {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px; /* Esto asegura que el botón sea cuadrado */
+    border-radius: 0; /* Sin bordes redondeados para que sea cuadrado */
+    display: inline-block; /* Hace que se comporte como un bloque dentro del contenedor */
+    text-align: center; /* Alineación centrada del texto */
+    transition: background-color 0.3s, transform 0.3s, border-color 0.3s; /* Transiciones suaves */
+    width: 100px; /* Ancho fijo */
+    height: 100px; /* Alto fijo para que sea cuadrado */
+}
+
+.contacto-btn:hover {
+    background-color: #ff5c5c; /* Color de fondo cuando el mouse pasa sobre el botón */
+    border-color: #ff5c5c; /* Cambia el color del borde al pasar el mouse */
+    transform: scale(1); /* Sin efecto de agrandamiento, solo mantiene el tamaño cuadrado */
+}
+
+.description {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
 }
