@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
+
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">
@@ -27,35 +28,39 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
-            <div class="swiper-slide slide1">
-                <div class="overlay"></div>
-                <div class="img1"><img src="/img/img1.jpg" alt="img1"></div>
-                <h2><span>DISCO DE FRENOS</span> <br> <strong>LIVIANOS</strong></h2>
-            </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide slide2">
+            <div class="swiper-slide">
                 <div class="overlay"></div>
                 <div class="content">
-                    <h2>Otro Producto</h2>
+                    <h2>Bienvenidos a Novo Partes</h2>
+                    <span>Tu mejor opción en repuestos y servicios</span>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h2>Calidad y Garantía</h2>
+                    <span>Servicios 100% confiables</span>
                 </div>
             </div>
         </div>
-    </div>
-    
-        <!-- Botones de navegación -->
+
+        <!-- Flechas de navegación -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
 
-    <div class="description">
-        <h3>"Somos una empresa dedicada a atender las necesidades de repuestos, lubricantes y servicios en el mercado automotor "</h3>
-    </div>
-
-    <!-- Agregar el botón de contacto al final de la lista de navegación -->
-        <div class="box-contact"><li><a href="#contacto" class="contact">Contacto</a></li></div>
-
+    <!-- Script Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    </script>
 
 </body>
 </html>

@@ -2,14 +2,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño de los elementos */
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: white;
-    overflow-x: hidden; /* Elimina el scroll horizontal */
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 4%;
+    padding: 27px 4%;
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,7 +26,7 @@ body {
 }
 
 .navbar .logo img {
-    height: 30px; /* Ajusta el tamaño del logo */
+    height: 30px;
 }
 
 .navbar ul {
@@ -40,24 +40,21 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase; /* Hace que las letras estén en mayúsculas */
+    text-transform: uppercase;
     padding: 5px 10px;
 }
 
 .navbar ul li a:hover {
-    background-color: #555; /* Color de fondo al pasar el mouse */
+    background-color: #555;
     border-radius: 5px;
 }
 
 /* Carrusel */
 .swiper-container {
     width: 100%;
-    height: 100vh; /* Carrusel ocupa toda la altura de la ventana */
-    overflow: hidden; /* Elimina cualquier desbordamiento visual del carrusel */
-}
-
-.swiper-wrapper {
-    display: flex;
+    height: 100vh; /* Ajusta la altura del carrusel, 50% de la altura de la ventana */
+    margin-top: 80px; /* Asegura que el carrusel se ubique debajo del navbar */
+    overflow: hidden;
 }
 
 .swiper-slide {
@@ -66,16 +63,23 @@ body {
     align-items: center;
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Hace que el slide tenga el tamaño completo de la ventana */
+    height: 100%;
+}
+
+/* Background images for slides */
+.swiper-slide:nth-child(1) {
+    background-image: url('img/img1.jpg'); /* Ruta de la primera imagen */
+}
+
+.swiper-slide:nth-child(2) {
+    background-image: url('img/img2.jpg'); /* Ruta de la segunda imagen */
 }
 
 .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Hace que la imagen cubra todo el slide sin distorsionarse */
+    display: none; /* Oculta la etiqueta <img>, ya que usamos background-image */
 }
 
-/* Overlay */
+/* Overlay y Contenido */
 .overlay {
     position: absolute;
     top: 0;
@@ -92,7 +96,7 @@ body {
     left: 10%;
     transform: translateY(-50%);
     color: white;
-    z-index: 2; /* Asegura que el contenido esté por encima de la overlay */
+    z-index: 2;
 }
 
 .content h2 {
@@ -104,52 +108,36 @@ body {
     color: orange;
 }
 
-/* Estilo para el botón de contacto con borde cuadrado */
+/* Botón de contacto */
 .box-contact {
+    display: inline-block;
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 12px 30px; /* Ajusta el tamaño del botón */
-    border-radius: 0; /* Sin bordes redondeados para hacerlo cuadrado */
-    display: inline-block; /* Hace que se comporta como un bloque dentro del contenedor */
-    transition: background-color 0.3s, transform 0.3s, border-color 0.3s; /* Transiciones suaves */
-    margin-top: 30px;
+    padding: 12px 30px;
     background-color: #080808;
-    transform: scale(1.05);
-    list-style: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
 }
 
 .box-contact:hover {
-    background-color: #0f0f0f; /* Color de fondo cuando el mouse pasa sobre el botón */
-    border-color: #080808; /* Cambia el color del borde al pasar el mouse */
-    transform: scale(1.05); /* Efecto de agrandamiento */
+    background-color: #0f0f0f;
+    transform: scale(1.05);
 }
 
 .box-contact:active {
-    background-color: #c80000; /* Color de fondo cuando el botón es presionado */
-    border-color: #c80000; /* Color del borde al presionar */
+    background-color: #c80000;
 }
 
 .contact {
     text-decoration: none;
 }
 
+/* Descripción */
 .description {
     color: black;
     margin-left: 20%;
     margin-right: 20%;
-    text-align: center;
-}
-
-.img1 {
-    background-image: url('img/img1.jpg'); /* Ruta de tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra todo el slide */
-    background-position: center; /* Centra la imagen */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
