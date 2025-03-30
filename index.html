@@ -27,7 +27,6 @@
     <!-- CARRUSEL -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <!-- Slide 1 -->
             <div class="swiper-slide">
                 <div class="overlay"></div>
                 <div class="content">
@@ -35,7 +34,6 @@
                     <span>Tu mejor opción en repuestos y servicios</span>
                 </div>
             </div>
-            <!-- Slide 2 -->
             <div class="swiper-slide">
                 <div class="overlay"></div>
                 <div class="content">
@@ -44,23 +42,19 @@
                 </div>
             </div>
         </div>
-
-        <!-- Flechas de navegación -->
-        <div class="swiper-button-prev"></div>
+        
+        <!-- Botones de navegación -->
         <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Paginación -->
+        <div class="swiper-pagination"></div>
     </div>
 
     <!-- Script Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            }
-        });
-    </script>
+    <script src="script.js"></script>
+    <!-- Asegúrate de enlazar el archivo script.js -->
 
 </body>
 </html>

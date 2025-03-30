@@ -1,15 +1,16 @@
-// Inicializa Swiper
 var swiper = new Swiper('.swiper-container', {
-    loop: true, // Habilita el ciclo infinito
-    navigation: { // Agrega navegación con botones
+    loop: true,
+    navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    pagination: { // Paginación de los slides (si la quieres agregar)
+    pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    autoplay: { // Auto Play para deslizar las imágenes automáticamente
-        delay: 3000, // Desliza cada 3 segundos
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
     },
+    speed: 500,
 });
